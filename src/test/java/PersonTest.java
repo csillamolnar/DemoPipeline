@@ -24,7 +24,7 @@ public class PersonTest {
                 .build();
 
         assertNotNull(testPerson);
-        assertEquals(personName, testPerson.getName());
+        assertEquals(personName+"New", testPerson.getName());
         assertEquals(AgeGroup.ADULT, testPerson.getAgeGroup());
         assertEquals(HairColor.BLOND, testPerson.getHairColor());
         assertEquals(EyeColor.GREEN, testPerson.getEyeColor());
