@@ -12,7 +12,7 @@ public class MainPersonGenerator {
                         .withEyeColor(EyeColor.BLUE).build();
 
 
-        LOGGER.info(child.toString());
+        LOGGER.info(child.getEyeColor().name());
 
 
 
