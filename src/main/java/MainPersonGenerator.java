@@ -15,16 +15,11 @@ public class MainPersonGenerator {
                 new Person.Builder("FirstPerson", AgeGroup.CHILD).withHairColor(HairColor.BLACK)
                         .withEyeColor(EyeColor.BLUE).build();
 
-        if (child.getEyeColor().name().equals(EyeColor.BLUE)){
+        if (!child.getEyeColor().name().equals(EyeColor.BLUE.name())) {
+            LOGGER.info("A non blue eye child was created");
+        } else {
             LOGGER.info("A blue eye child was created");
         }
-        else{
-            LOGGER.info("A non blue eye child was created");
-        }
-
-
-
-
 
 
     }
